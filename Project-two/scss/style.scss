@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+
+$maincolor: #f4f0ea;
+$nav-li-color: #1E2630;
+
+$font-family : 'Montserrat',
+sans-serif;
+
+
+* {
+    &::before {
+        &::after {
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+    }
+}
+
+
+body {
+    background: $maincolor;
+    line-height: 1.65;
+    font-family: $font-family;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    color: $nav-li-color;
+}
+
+h2 {
+    p {
+        img {
+            ul {
+                ol {
+                    margin: 0 0 1em;
+                }
+            }
+        }
+    }
+}
+
+@mixin style-ul-il-a {
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+}
+
+.main-nav {
+    padding: 1.953rem 0 3.052rem;
+
+    .main-nav_list {
+        padding-left: 1.5em;
+        display: flex;
+        justify-content: flex-start;
+
+        .main-nav_item {
+            @include style-ul-il-a();
+
+            a {
+                @include style-ul-il-a();
+                font-size: 1.55rem;
+                font-weight: 500;
+                font-family: $font-family;
+                margin-right: 1rem;
+                padding: 0 0 .64rem 0;
+                text-transform: capitalize;
+                color: $nav-li-color;
+            }
+
+            a:hover {
+                color: #A55559;
+            }
+        }
+
+        .active {
+            border-bottom: 0.16rem solid currentColor;
+        }
+    }
+}
+
+main {
+    flex: 1 1 auto;
+    margin: auto;
+}
+
+.main {
+    grid-template-columns: 17.11em auto;
+    display: grid;
+    gap: 1.9em;
+}
+
+.main-left {
+    .main-photo {
+        width: 47%;
+        height: 11.5em;
+        display: block;
+        margin: 0 auto 2.3em;
+    }
+}
+
+.main-left_intro {
+    padding: 0 0 0 2em;
+    flex: 1 0 50%;
+
+    .main_title {
+        font-size: 1.3em;
+        line-height: 1.15;
+        margin-bottom: 0;
+    }
+
+}
+
+.main-left_intro_h2 {
+    padding: 0;
+
+    h2 {
+        font-weight: 400;
+        margin: 0 0 1em;
+        font-size: 1.9em;
+    }
+}
+
+.main-left_intro_p {
+    padding: 0;
+
+    p {
+        font-size: 1em;
+        margin: 0 0 1em;
+    }
+}
+
+.main-right {
+    display: flex;
+    align-items: center;
+
+    ol {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+
+        li:nth-last-of-type(6) {
+            color: #B33B0E;
+        }
+
+        li:nth-last-of-type(5) {
+            color: #806B35;
+        }
+
+        li:nth-last-of-type(4) {
+            color: #2F435B;
+        }
+
+        li:nth-last-of-type(3) {
+            color: #4E6F6C;
+        }
+
+        li:nth-last-of-type(2) {
+            color: #65422E;
+        }
+
+        li:nth-last-of-type(1) {
+            color: #A55559;
+        }
+
+    }
+
+    .main-right_li {
+        flex: 1 0 100%;
+        margin: 0 0 1.25em;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: flex-start;
+        counter-increment: step-counter;
+
+        &::before {
+            flex: 0 0 1.2em;
+            border: .05em solid currentColor;
+            height: 1.2em;
+            margin: 0 .8em 0 0;
+            content: counter(step-counter);
+            display: inline-block;
+            font-size: .9em;
+            text-align: center;
+            line-height: 1.20em;
+            border-radius: 50%;
+            vertical-align: top;
+            background-color: transparent;
+        }
+
+        @media (min-width: 900px) {
+            flex: 1 0 50%;
+        }
+
+
+    }
+
+    .main-right-a {
+        @include style-ul-il-a();
+        line-height: 1.11em;
+        font-family: 'Courgette', cursive;
+        font-size: 3.7em;
+        font-weight: 500;
+        padding: .3em;
+
+        &:hover {
+            text-decoration: underline;
+
+        }
+    }
+
+
+}
+
+.main-footer {
+    display: flex;
+    padding: 3.5em 0 0;
+    justify-content: space-between;
+
+    a {
+        color: $nav-li-color;
+    }
+}

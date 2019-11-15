@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
+
+*::before::after {
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f0ea;
+  line-height: 1.65;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  color: #1e2630;
+}
+
+h2 p img ul ol {
+  margin: 0 0 1em;
+}
+
+.main-nav {
+  padding: 1.953rem 0 3.052rem;
+}
+
+.main-nav .main-nav_list {
+  padding-left: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.main-nav .main-nav_list .main-nav_item {
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+
+.main-nav .main-nav_list .main-nav_item a {
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  font-size: 1.55rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 1rem;
+  padding: 0 0 0.64rem 0;
+  text-transform: capitalize;
+  color: #1e2630;
+}
+
+.main-nav .main-nav_list .main-nav_item a:hover {
+  color: #a55559;
+}
+
+.main-nav .main-nav_list .active {
+  border-bottom: 0.16rem solid currentColor;
+}
+
+main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: auto;
+}
+
+.main {
+  -ms-grid-columns: 17.11em auto;
+  grid-template-columns: 17.11em auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.9em;
+}
+
+.main-left .main-photo {
+  width: 47%;
+  height: 11.5em;
+  display: block;
+  margin: 0 auto 2.3em;
+}
+
+.main-left_intro {
+  padding: 0 0 0 2em;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 50%;
+  flex: 1 0 50%;
+}
+
+.main-left_intro .main_title {
+  font-size: 1.3em;
+  line-height: 1.15;
+  margin-bottom: 0;
+}
+
+.main-left_intro_h2 {
+  padding: 0;
+}
+
+.main-left_intro_h2 h2 {
+  font-weight: 400;
+  margin: 0 0 1em;
+  font-size: 1.9em;
+}
+
+.main-left_intro_p {
+  padding: 0;
+}
+
+.main-left_intro_p p {
+  font-size: 1em;
+  margin: 0 0 1em;
+}
+
+.main-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-right ol {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.main-right ol li:nth-last-of-type(6) {
+  color: #b33b0e;
+}
+
+.main-right ol li:nth-last-of-type(5) {
+  color: #806b35;
+}
+
+.main-right ol li:nth-last-of-type(4) {
+  color: #2f435b;
+}
+
+.main-right ol li:nth-last-of-type(3) {
+  color: #4e6f6c;
+}
+
+.main-right ol li:nth-last-of-type(2) {
+  color: #65422e;
+}
+
+.main-right ol li:nth-last-of-type(1) {
+  color: #a55559;
+}
+
+.main-right .main-right_li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  margin: 0 0 1.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  counter-increment: step-counter;
+}
+
+.main-right .main-right_li::before {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 1.2em;
+  flex: 0 0 1.2em;
+  border: 0.05em solid currentColor;
+  height: 1.2em;
+  margin: 0 0.8em 0 0;
+  content: counter(step-counter);
+  display: inline-block;
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 1.2em;
+  border-radius: 50%;
+  vertical-align: top;
+  background-color: transparent;
+}
+
+@media (min-width: 900px) {
+  .main-right .main-right_li {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+  }
+}
+
+.main-right .main-right-a {
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  line-height: 1.11em;
+  font-family: "Courgette", cursive;
+  font-size: 3.7em;
+  font-weight: 500;
+  padding: 0.3em;
+}
+
+.main-right .main-right-a:hover {
+  text-decoration: underline;
+}
+
+.main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3.5em 0 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.main-footer a {
+  color: #1e2630;
+}
+/*# sourceMappingURL=style.css.map */
